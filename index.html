@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinghan Ma's Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f7f9fc;
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini-dark.png');
+        }
+        header {
+            background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .container:before, .container:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10px;
+            background: linear-gradient(to bottom, #8EC5FC, #E0C3FC);
+        }
+        .container:before {
+            left: -20px;
+        }
+        .container:after {
+            right: -20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .section h2 {
+            color: #1565C0;
+            border-bottom: 2px solid #1565C0;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            padding: 5px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        ul li:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #1565C0;
+            font-weight: bold;
+        }
+        footer {
+            background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #1565C0;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .numbered-list {
+            counter-reset: item;
+        }
+        .numbered-list ul {
+            padding-left: 0;
+        }
+        .numbered-list ul li {
+            padding-left: 30px;
+            margin-bottom: 8px; /* 调整小项之间的间距 */
+        }
+        .numbered-list ul li:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #1565C0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jinghan Ma</h1>
+        <p>Master's Student at Harbin Institute of Technology, Shenzhen</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Research Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#patent">Patent</a>
+        <a href="#awards">Awards and Honors</a>
+        <a href="#skills">Research Skills</a>
+        <a href="#qualifications">Skills and Qualifications</a>
+        <a href="#supervisor">Supervisor</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Jinghan Ma, Master's student in Aeronautical and Astronautical Science and Technology at Harbin Institute of Technology, Shenzhen. My research focuses on Robotics, Robot Configuration Design, and Expensive Many-Objective Optimization.</p>
+        </div>
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>2022-Present:</strong> M.Sc. in Aeronautical and Astronautical Science and Technology, Institute of Space Science and Applied Technology, Harbin Institute of Technology, Shenzhen, China.</p>
+            <p><strong>2018-2022:</strong> B.E. in Mechanical Engineering, School of Mechanical Engineering and Automation, Northeastern University, China.</p>
+        </div>
+        <div id="experience" class="section numbered-list">
+            <h2>Research Experience</h2>
+            <h3>Performance evaluation system for on-orbit operation of multi-branch spacecraft (2022-Present)</h3>
+            <ul>
+                <p><strong>1. </strong> Automatic generation of kinematic models for modular robotic arms.</li>
+                <p><strong>2. </strong> Optimization of single-arm configuration and installation matrix for modular robotic arms.</li>
+                <p><strong>3. </strong>Joint optimization of single-arm and installation matrix based on surrogate models.</li>
+            </ul>
+            <h3>Development of Multi-Arm Space Robot Testbed (2022-2023, Finished)</h3>
+            <ul>
+                <p><strong>1. </strong>Designed an air-bearing-based four-arm robot for space on-orbit services.</li>
+                <p><strong>2. </strong>Participated in the post-maintenance work of the structural team.</li>
+                <p><strong>3. </strong>Calculated the relevant performance parameters of the four-arm robot.</li>
+            </ul>
+        </div>
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <p>1. Chengfei Yue*, Jinghan Ma, Lingbing Zeng, Tianshu Wang, Xibin Cao^. Performance Quantification and Design Optimization of Multi-branch Spacecraft for On-orbit Manipulation. Journal of Astronautics. (Accepted, Student First Author)</p>
+            <p>(*is the supervisor and ^is the corresponding author)</p>
+        </div>
+        <div id="patent" class="section">
+            <h2>Patent</h2>
+            <p>1. Method</p>
+        </div>
+        <div id="awards" class="section">
+            <h2>Awards and Honors</h2>
+            <p><strong>2022:</strong> Second-level Scholarship, Harbin Institute of Technology, Shenzhen.</p>
+            <p><strong>2023:</strong> China Graduate Future Flight Vehicle Innovation Competition National Third Prize</p>
+            <p><strong>2023:</strong> Second-level Scholarship, Harbin Institute of Technology, Shenzhen.</p>
+        </div>
+        <div id="skills" class="section numbered-list">
+            <h2>Research Skills</h2>
+            <ul>
+                <p><strong>1. </strong>Familiar with optimization theory, such as many-objective optimization, Bayesian optimization.</li>
+                <p><strong>2. </strong>Proficient in robot kinematics, robot dynamics, dexterous manipulation and motion planning.</li>
+                <p><strong>3. </strong>Proficient in fundamental mechanical structure design skills.</li>
+                <p><strong>4. </strong>Preliminary foundation in knowledge of robot control theory.</li>
+            </ul>
+        </div>
+        <div id="qualifications" class="section numbered-list">
+            <h2>Skills and Qualifications</h2>
+            <ul>
+                <p><strong>1. </strong>Programming ability in Matlab.</li>
+                <p><strong>2. </strong>Simulate in the physics engines in Simscape.</li>
+                <p><strong>3. </strong>Ability to design mechanical structure in Solidworks.</li>
+                <p><strong>4. </strong>English: College English Test Band 6: 475/710</li>
+            </ul>
+        </div>
+        <div id="supervisor" class="section">
+            <h2>Supervisor</h2>
+            <p>Chengfei Yue, professor of Harbin Institute of Technology Shenzhen (HITSZ), and the Lab Director of the On-orbit manipulation dynamics and control in HITSZ. He was also awarded as an outstanding reviewer of IFAC Mechatronics journal. For more detailed information, please reference the website: <a href="http://faculty.hitsz.edu.cn/yuechengfei?lang=en" target="_blank">http://faculty.hitsz.edu.cn/yuechengfei?lang=en</a></p>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Address: L-715, University Town of Shenzhen, China, 518055.</p>
+            <p>E-mail: <a href="mailto:mjhcode016@gmail.com">mjhcode016@gmail.com</a></p>
+            <p>Tel: +86 13046876905</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Jinghan Ma. All rights reserved.
+    </footer>
+</body>
+</html>
